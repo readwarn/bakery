@@ -1,0 +1,53 @@
+.header{
+   padding: 1rem 1.5rem;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-bottom: 3rem;
+   background-color: #FFFFFF;
+   position: sticky;
+   width: 100%;
+   top: 0;
+}
+.header a{
+   color: #000000;
+   text-decoration: none;
+}
+.header a.brand{
+    font-size: 1.5rem;
+    padding-bottom: 0.3rem;
+    border-bottom: solid 2px #F2C44C;
+}
+i.toggle{
+    color: #F2C44C;
+}
+div.links a{
+    display: block;
+    margin-bottom: 1.5rem;
+}
+.header div.links{
+    margin-top: 2rem;
+    font-size: 0.8rem;
+    width: 100%;
+}
+.hide{
+   display: none;
+}
+
+@media only screen and (min-width: 992px) {
+    i.toggle{
+        display: none;
+    }
+    .header{
+        flex-direction: row;
+        padding: 0.3rem 3rem;
+    }
+    .header div.links{
+        display: flex;
+        margin-bottom: 0;
+        margin-left: auto;
+        width: 35%;
+        font-size: 0.8rem;
+        justify-content: space-between;
+    }
+  }
